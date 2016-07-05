@@ -29,12 +29,24 @@ export class Hero {
 })
 
 /* Composant d’application
-   avec deux propriétés
+   avec deux propriétés dont l’utilisation d’un array et d’une classe
 */
 export class AppComponent {
   title = 'tour of Heroes';
-  hero : Hero = {
-    id: 1,
-    name: 'Windstorm'
-  };
+  public heroes = HEROES;
 }
+
+/* Array créant des objets de la classe Hero
+*/
+const HEROES: Hero[] = [
+  { id: 11, name: 'Mr. Nice' },
+  { id: 12, name: 'Narco' },
+  { id: 13, name: 'Bombasto' },
+  { id: 14, name: 'Celeritas' },
+  { id: 15, name: 'Magneta' },
+  { id: 16, name: 'Ruberman' },
+  { id: 17, name: 'Dynama' },
+  { id: 18, name: 'Dr IQ' },
+  { id: 19, name: 'Magma' },
+  { id: 20, name: 'Tornado' }
+];
