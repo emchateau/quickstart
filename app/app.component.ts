@@ -10,6 +10,7 @@ export class Hero {
 
 /* @Component décoration
    avec des liens vers les propriétés définies dans le composant d’application
+   utilisation d’une directive prédéfinie ngModel
 */
 @Component({
   selector: 'my-app',
@@ -22,7 +23,7 @@ export class Hero {
     </div>
     <div>
       <label>name: </label>
-      <input value="{{hero.name}}" placeholder="name">
+      <input [(ngModel)]="hero.name" placeholder="name">
     </div>
   `
 })
